@@ -11,5 +11,5 @@ git checkout [branch_name]
 Branches are the following : 
 
 - electronique
-- macanique
+- mecanique
 - developpement
