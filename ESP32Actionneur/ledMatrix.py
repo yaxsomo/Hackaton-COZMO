@@ -1,11 +1,11 @@
-from machine import Pin, PWM, SPI
+from machine import Pin, SPI
 from max7219 import Max7219
 
 
 class LedMatrix :
     
     __init__ (self, pinMosi, pinClk, pinCS, baudrateValue) :
-        self.spi = SPI(baudrate=baudrate, polarity=1, phase=0, sck=Pin(pinClk,Pin.OUT), mosi=Pin(pinMosi,Pin.OUT))
+        self.spi = SPI(baudrate=baudrateValue, polarity=1, phase=0, sck=Pin(pinClk,Pin.OUT), mosi=Pin(pinMosi,Pin.OUT))
         self.screen = Max7219(8, 8, spi, Pin(pinCS, Pin.OUT))
         
     # Display the chosen LedMatrix
