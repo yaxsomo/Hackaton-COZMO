@@ -8,15 +8,6 @@ from max7219 import Max7219
 
 
 
-
-
-
-spi = SPI(baudrate=10000000, polarity=1, phase=0, sck=Pin(18), mosi=Pin(23))
-ss = Pin(5, Pin.OUT)
-screen = Max7219(8, 8, spi, Pin(5))
-screen.pixel(0,0,1)
-screen.show()
-
 ledMatrix_enerve= [ [0, 0, 0, 1, 0,0, 0, 0],
                      [0, 0, 1, 0, 0, 0, 0, 0],
                      [0, 0, 1, 0, 0, 0, 0, 0],
