@@ -1,7 +1,7 @@
 from machine import Pin
 
 
-class LedMatrix :
+class InfraredSensor :
     
     __init__ (self, pinInfrared) :
         self.infrared = Pin(pinInfrared,Pin.IN)
