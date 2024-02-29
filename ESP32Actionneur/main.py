@@ -1,78 +1,77 @@
 from machine import Pin, PWM, SPI
 import time
 from max7219 import Max7219
+from LedMatrixConst import *
+from ledMatrix import *
+from motor import *
+from servoMotor import *
 
 
+# # # SET DEFAULT BEHAVIOUR # # #
+ledBoard = LedMatrix(pinMosi=23, pinClk=18, pinCS=5, baudrateValue=10000000)
+motor = Motor(27, 26, 25, 14, 33, 32)
+servo = ServoMotor(21)
+
+#time.sleep(2.5)
+#ledBoard.display_ledMatrix(ledMatrix_dollar)
+#ledBoard.testone()
+#time.sleep(5)
+#servo.defaultPos()
+
+servo.moveServo(90)
+#print(servo.current_angle)
+
+# servo.defaultPos()
+# servo.moveServo(150)
+
+time.sleep(4)
+ledBoard.display_ledMatrix(ledMatrix_neutral)
+motor.moveFastForward()
+time.sleep(2)
+motor.turnAroundClockwise90()
+time.sleep(0.5)
+motor.turnAroundClockwise90()
+time.sleep(0.5)
+motor.turnAroundClockwise90()
+time.sleep(0.5)
+motor.turnAroundClockwise90()
+time.sleep(0.5)
+motor.moveFastBackward()
+time.sleep(2)
+motor.turnAroundCounterClockwise()
+time.sleep(2.5)
+motor.stop()
+ledBoard.display_ledMatrix(ledMatrix_spiral)
+time.sleep(1.5)
+ledBoard.display_ledMatrix(ledMatrix_eye_closed)
+time.sleep(1)
+ledBoard.display_ledMatrix(ledMatrix_heart)
+#servo.moveServo(90)
+time.sleep(1.5)
+ledBoard.display_ledMatrix(ledMatrix_dollar)
 
 
+"""
+Avant
+360
+Arrière
+Spin
+Spiral
+Heart
+Effort + Arm push
+Money
+Arm dance
+"""
 
 
-
-ledMatrix_enerve= [ [0, 0, 0, 1, 0,0, 0, 0],
-                     [0, 0, 1, 0, 0, 0, 0, 0],
-                     [0, 0, 1, 0, 0, 0, 0, 0],
-                     [0, 1, 0, 1, 1, 1, 0, 0],
-                     [0, 0, 1, 1, 1, 1, 1, 0],
-                     [0, 0, 1, 1, 0, 1, 1, 0],
-                     [0, 0, 1, 1, 1, 1, 1, 0],
-                     [0, 0, 0, 1, 1, 1, 0, 0]]
-
-
-
-ledMatrix_dollar = [ [0, 0, 0, 1, 0,0, 0, 0],
-                     [0, 0, 1, 0, 0, 0, 0, 0],
-                     [0, 1, 0, 0, 0, 0, 0, 0],
-                     [1, 0, 1, 1, 1, 0, 0, 0],
-                     [0, 1, 1, 1, 1, 1, 0, 0],
-                     [0, 1, 1, 0, 1, 1, 0, 0],
-                     [0, 1, 1, 1, 1, 1, 0, 0],
-                     [0, 0, 1, 1, 1, 0, 0, 0]]
-
-display_ledMatrix(ledMatrix_enerve)
-
-
-
-
-
-# display.text('4',0,0,1)
-# display.show()    
-
-# 
-
-# ena = Pin(27, Pin.OUT)
-# in1 = Pin(26, Pin.OUT)
-# in2 = Pin(25, Pin.OUT)pwm1 = PWM(ena, freq=5000, duty_u16=41768)
-# in1.on()
-# in2.off()
-# 
-# enb = Pin(14, Pin.OUT)
-# in3 = Pin(33, Pin.OUT)
-# in4 = Pin(32, Pin.OUT)
-# in4.off()
-# in3.on()
-
-#chauve
-# servo1 = Pin(21, Pin.OUT)
-# pwmservo1 = PWM(servo1, freq=50, duty=angle_to_duty(0))
-# 
-# servo2 = Pin(22, Pin.OUT)
-# pwmservo2 = PWM(servo2, freq=50, duty=angle_to_duty(180))
-
-# #vert
-# pwm1 = PWM(ena, freq=5000, duty_u16=41768)
-# 
-# pwm2 = PWM(enb, freq=5000, duty_u16=45768)
-
-# while True :
-#     time.sleep(2)
-#     print(in3.value())
-#     print(in4.value())
-
+# # # INFRAROUGE # # #
 # infrarouge = Pin(4, Pin.IN)
 # while True : 
 #   valueInfrarouge = infrarouge.value()
 #   print(valueInfrarouge)
 #   time.sleep(2)
+
+
 
 
 
