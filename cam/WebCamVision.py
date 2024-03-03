@@ -3,7 +3,7 @@ from pyzbar.pyzbar import decode
 import numpy as np
 import mediapipe as mp
 
-show = False
+show = True
 
 mp_hands = mp.solutions.hands.Hands()
 
