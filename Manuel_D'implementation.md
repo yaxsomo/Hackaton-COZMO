@@ -30,7 +30,9 @@
 ## Outils Requis
 
 - Tournevis à six pans creux
-- _[Ajouter d'autres outils nécessaires]_
+- Pisotet a colle
+- Pince plate 
+- Colle forte
 
 ## Remarques Importantes
 
