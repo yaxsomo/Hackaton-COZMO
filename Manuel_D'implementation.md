@@ -40,17 +40,17 @@
 
 ## Instructions d'Assemblage
 
-1. **Montage des Moteurs DC** : Commencez par installer les moteurs DC en veillant à câbler correctement pour assurer le bon sens de rotation.
-2. **Assemblage de la Tête** : 
+1. **Assemblage de la Tête** : 
    - Installer une caméra, un capteur infrarouge, et deux matrices LED.
    - Sur le squelette de la tête, vissez les composants électroniques.
    - Montez ensuite la tête sur le châssis.
-3. **Installation des Bras** : 
+2. **Montage des Moteurs DC** : Commencez par installer les moteurs DC en veillant à câbler correctement pour assurer le bon sens de rotation.
+2. **Installation des Bras** : 
    - Montez les piliers des bras. 
    - Installez les roulements.
    - Fixez le bras-porteur.
-4. **Assemblage de la Base Roulante** : Terminez par assembler et monter la base roulante.
-5. **Carrosserie de la Tête** : 
+3. **Assemblage de la Base Roulante** : Terminez par assembler et monter la base roulante.
+4. **Carrosserie de la Tête** : 
    - Après l'assemblage de la tête, fixez les deux parties de la carrosserie autour de celle-ci en utilisant les aimants prévus à cet effet.
 
 ## Préparation des Pièces Imprimées
@@ -59,6 +59,6 @@
 
 ## Conseils Supplémentaires
 
-- **Test de Mobilité** : Bien que non spécifié, il est conseillé de réaliser un test pour vérifier la fluidité des mouvements après assemblage.
+- **Test de Mobilité** : Il est conseillé de réaliser un test pour vérifier la fluidité des mouvements après assemblage.
 - **Contrôle Qualité** : Avant finalisation, inspectez chaque pièce imprimée pour s'assurer de sa qualité et de son ajustement correct.
 
